@@ -10,7 +10,7 @@
 <body>
  <style>
         body {
-            background-image: url(Imagens/space.jpg);
+            background-color: rgb(59, 59, 172);
             background-repeat: no-repeat;
             background-size: cover;
             color: aliceblue;
