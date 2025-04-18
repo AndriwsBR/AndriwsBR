@@ -4,9 +4,9 @@
 
 ## 👨‍💻 Sobre mim
 
-- Estudante na área da tecnologia
-- Apaixonado por tecnologia, especialmente **Python** e **JavaScript**
-- Sempre em busca de novos desafios
+- Estudante na área da tecnologia  
+- Apaixonado por tecnologia, especialmente **Python** e **JavaScript**  
+- Sempre em busca de novos desafios  
 - Em formação como desenvolvedor front-end pela **FORD ENTER**
 
 ## 🚀 Tecnologias que eu uso
@@ -16,10 +16,6 @@
 ![Power BI](https://img.shields.io/badge/-Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-
-## 📈 Meu GitHub Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=AndriwsBR&show_icons=true&hide_title=true&theme=radical)
 
 ## 📌 Projetos em destaque
 
