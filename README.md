@@ -28,3 +28,30 @@
 ---
 
 **Obrigado pela visita!** 😄
+
+name: Generate Snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # roda todos os dias à meia-noite
+  workflow_dispatch:     # permite rodar manualmente
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Generate the snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: seu-usuario-aqui
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+
+      - name: Push to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
