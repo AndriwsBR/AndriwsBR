@@ -29,29 +29,9 @@
 
 **Obrigado pela visita!** 😄
 
-name: Generate Snake
+<picture align="center">
+   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kaike-sousa/kaike-sousa/output/github-contribution-grid-snake-dark.svg">
+   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kaike-sousa/kaike-sousa/output/github-contribution-grid-snake-dark.svg">
+   <img align="center" alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/mari4souza/mari4souza/output/github-contribution-grid-snake.svg">
+ </picture>
 
-on:
-  schedule:
-    - cron: "0 0 * * *"  # roda todos os dias à meia-noite
-  workflow_dispatch:     # permite rodar manualmente
-
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Generate the snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: seu-usuario-aqui
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-
-      - name: Push to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
